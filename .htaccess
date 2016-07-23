@@ -1,0 +1,12 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /Platzi_web_dev/Kine_wp_blog/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /Platzi_web_dev/Kine_wp_blog/index.php [L]
+</IfModule>
+
+# END WordPress
